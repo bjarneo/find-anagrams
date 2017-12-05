@@ -1,0 +1,46 @@
+{
+  "name": "find-anagrams",
+  "version": "1.0.0",
+  "description": "This package will find all anagrams from an array and group them together in an matrix array",
+  "main": "index.js",
+  "dependencies": {
+    "is-anagram": "^1.0.3"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
+    "prettier": "^1.8.2"
+  },
+  "scripts": {
+    "test": "ava",
+    "test-watch": "ava --watch",
+    "prepublish": "npm test",
+    "prettier": "prettier --config .prettierrc --write '*.js'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run prettier",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "word",
+    "words",
+    "anagram",
+    "anagrams",
+    "find",
+    "find-anagrams"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjarneo/find-anagrams.git"
+  },
+  "homepage": "https://github.com/bjarneo/find-anagrams",
+  "bugs": {
+    "url": "https://github.com/bjarneo/find-anagrams/issues"
+  },
+  "author": "Bjarne Oeverli",
+  "license": "MIT"
+}
