@@ -7,6 +7,10 @@ const isAnagram = require('is-anagram');
  * @return {array} result The matrix array of anagrams
  */
 module.exports = function findAnagrams(words) {
+    if (!Array.isArray(words)) {
+        throw new TypeError('your input ' + typeof words + ' was not an array.')
+    }
+
     const result = [];
     const skip = [];
 
