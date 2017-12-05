@@ -1,6 +1,6 @@
 {
   "name": "find-anagrams",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package will find all anagrams from an array and group them together in an matrix array",
   "main": "index.js",
   "dependencies": {
