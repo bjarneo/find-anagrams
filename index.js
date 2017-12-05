@@ -3,8 +3,8 @@ const isAnagram = require('is-anagram');
 /**
  * Returns a matrix array with all anagrams found in an array
  *
- * @param {array} str The main word / phrase
- * @return {array} if the two words / phrases are anagrams
+ * @param {array} words The array of words to check for anagrams
+ * @return {array} result The matrix array of anagrams
  */
 module.exports = function findAnagrams(words) {
     const result = [];
