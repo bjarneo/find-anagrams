@@ -15,6 +15,7 @@ npm install --save find-anagrams
 
 Usage
 ------
+Find all words that are anagrams in an array
 ```js
 const findAnagrams = require('find-anagrams');
 
@@ -35,6 +36,26 @@ findAnagrams([
     [ 'dog', 'god' ],
     [ 'server', 'revers' ]
 ]
+*/
+```
+
+Find all words that are anagrams to provided word
+```js
+const findAnagrams = require('find-anagrams');
+
+findAnagrams([
+    'listen',
+    'silent',
+    'enlist',
+    'word',
+    'dog',
+    'god',
+    'server',
+    'revers'
+], 'silent');
+
+/*
+[ 'silent', 'listen', 'enlist' ]
 */
 ```
 
