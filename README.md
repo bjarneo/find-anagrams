@@ -4,7 +4,7 @@ find anagrams
 
 What is this?
 ------
-This package will find all anagrams from an array and group them together in an matrix array. It will discard word without an anagram. https://en.wikipedia.org/wiki/Anagram
+This package will find all anagrams from an array and group them together in an matrix array. It will discard words without an anagram. https://en.wikipedia.org/wiki/Anagram
 
 Installation
 ------
