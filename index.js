@@ -8,7 +8,7 @@ const isAnagram = require('is-anagram');
  */
 module.exports = function findAnagrams(words) {
     if (!Array.isArray(words)) {
-        throw new TypeError('your input ' + typeof words + ' was not an array.')
+        throw new TypeError('your input "' + typeof words + '" was not an array.')
     }
 
     const result = [];
