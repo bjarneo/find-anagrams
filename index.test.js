@@ -11,21 +11,21 @@ const anagrams = [
     'dog',
     'god',
     'server',
-    'revers'
+    'revers',
 ];
 
-const result = [ 
-    [ 'listen', 'silent', 'enlist' ], 
-    [ 'dog', 'god' ],
-    [ 'server', 'revers' ]
+const result = [
+    ['listen', 'silent', 'enlist'],
+    ['dog', 'god'],
+    ['server', 'revers'],
 ];
 
-const specificWord = [
-    'silent',
-    'listen',
-    'enlist'
-];
+const specificWord = ['silent', 'listen', 'enlist'];
 
 test(t => t.true(findAnagrams(anagrams).toString() === result.toString()));
 
-test(t => t.true(findAnagrams(anagrams, 'silent').toString() === specificWord.toString()));
+test(t =>
+    t.true(
+        findAnagrams(anagrams, 'silent').toString() === specificWord.toString()
+    )
+);

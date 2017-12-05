@@ -4,12 +4,14 @@ const isAnagram = require('is-anagram');
  * Returns a matrix array with all anagrams found in an array
  *
  * @param {array} words The array of words to check for anagrams
- * @param {string} word The word (needle) to check against words provide for anagrams 
+ * @param {string} word The word (needle) to check against words provide for anagrams
  * @return {array} result The matrix array of anagrams
  */
 module.exports = function findAnagrams(words, word) {
     if (!Array.isArray(words)) {
-        throw new TypeError('your input "' + typeof words + '" was not an array.')
+        throw new TypeError(
+            'your input "' + typeof words + '" was not an array.'
+        );
     }
 
     const result = [];
@@ -38,13 +40,13 @@ module.exports = function findAnagrams(words, word) {
             }
 
             skip.push(copy[j]);
-            
+
             anagrams.push(copy[j]);
         }
 
         if (anagrams.length === 1) {
             continue;
-        } 
+        }
 
         // We don't need a matrix array if we search for words that are anagrams
         // of one word
