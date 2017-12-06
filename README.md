@@ -43,7 +43,7 @@ Find all words that are anagrams to provided word
 ```js
 const findAnagrams = require('find-anagrams');
 
-findAnagrams([
+const words = [
     'listen',
     'silent',
     'enlist',
@@ -52,9 +52,13 @@ findAnagrams([
     'god',
     'server',
     'revers'
-], 'silent');
+];
+
+findAnagrams(words, 'silent');
 
 /*
+The provided word will be the first in the array
+
 [ 'silent', 'listen', 'enlist' ]
 */
 ```
